@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.doh</groupId>
@@ -20,7 +21,6 @@
 		<mybatis-spring-version>1.3.2</mybatis-spring-version>
 		<mariadb-java-client-version>2.3.0</mariadb-java-client-version>
 		<jasypt-spring31-version>1.9.2</jasypt-spring31-version>
-		<log4jdbc-remix-version>0.2.7</log4jdbc-remix-version>
 		<passay-version>1.3.1</passay-version>
 		<json-version>20180813</json-version>
 		<jackson-version>2.9.8</jackson-version>
@@ -40,7 +40,7 @@
 				<exclusion>
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
-				 </exclusion>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -50,6 +50,7 @@
 		</dependency>
 
 		<!-- Spring Security -->
+		<!-- Spring Security Core -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -57,6 +58,7 @@
 			<version>${spring-security-version}</version>
 		</dependency>
 
+		<!-- Spring Security Web -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -64,6 +66,7 @@
 			<version>${spring-security-version}</version>
 		</dependency>
 
+		<!-- Spring Security Config -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -71,6 +74,7 @@
 			<version>${spring-security-version}</version>
 		</dependency>
 
+		<!-- Spring Security Taglibs -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -78,6 +82,7 @@
 			<version>${spring-security-version}</version>
 		</dependency>
 
+		<!-- Spring Security Test -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-test -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -87,6 +92,7 @@
 		</dependency>
 
 		<!-- DataBase & ORM(Object Relational Mapping) -->
+		<!-- Spring JDBC -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -94,6 +100,7 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
+		<!-- MyBatis -->
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -101,6 +108,7 @@
 			<version>${mybatis-version}</version>
 		</dependency>
 
+		<!-- MyBatis Spring -->
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -108,6 +116,7 @@
 			<version>${mybatis-spring-version}</version>
 		</dependency>
 
+		<!-- MariaDB Java Client -->
 		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
@@ -115,6 +124,7 @@
 			<version>${mariadb-java-client-version}</version>
 		</dependency>
 
+		<!-- JASYPT: Java Simplified Encryption -->
 		<!-- https://mvnrepository.com/artifact/org.jasypt/jasypt-spring31 -->
 		<dependency>
 			<groupId>org.jasypt</groupId>
@@ -122,6 +132,7 @@
 			<version>${jasypt-spring31-version}</version>
 		</dependency>
 
+		<!-- Passay Library -->
 		<!-- https://mvnrepository.com/artifact/org.passay/passay -->
 		<dependency>
 			<groupId>org.passay</groupId>
@@ -129,6 +140,7 @@
 			<version>${passay-version}</version>
 		</dependency>
 
+		<!-- JSON In Java -->
 		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
@@ -136,6 +148,7 @@
 			<version>${json-version}</version>
 		</dependency>
 
+		<!-- Jackson Databind -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -143,6 +156,7 @@
 			<version>${jackson-version}</version>
 		</dependency>
 
+		<!-- Jackson Core -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -150,6 +164,7 @@
 			<version>${jackson-version}</version>
 		</dependency>
 
+		<!-- Jackson Annotations -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -157,6 +172,7 @@
 			<version>${jackson-version}</version>
 		</dependency>
 
+		<!-- Apache Commons Collections -->
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -164,6 +180,7 @@
 			<version>${commons-collections4-version}</version>
 		</dependency>
 
+		<!-- Apache Commons Lang -->
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -171,21 +188,23 @@
 			<version>${commons-lang3-version}</version>
 		</dependency>
 
+		<!-- Apache Commons DBCP -->
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-dbcp2</artifactId>
 			<version>${commons-dbcp2-version}</version>
 		</dependency>
-				
+
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
-		</dependency>	
-		
+		</dependency>
+
 		<!-- Logging -->
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -234,7 +253,7 @@
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
-				
+
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -253,7 +272,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-	
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -261,24 +280,24 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <version>2.9</version>
-                <configuration>
-                    <additionalProjectnatures>
-                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-                    </additionalProjectnatures>
-                    <additionalBuildcommands>
-                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
-                    </additionalBuildcommands>
-                    <downloadSources>true</downloadSources>
-                    <downloadJavadocs>true</downloadJavadocs>
-                </configuration>
-            </plugin>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -300,6 +319,6 @@
 					<mainClass>org.test.int1.Main</mainClass>
 				</configuration>
 			</plugin>
-        </plugins>
-    </build>
+		</plugins>
+	</build>
 </project>
